@@ -4,7 +4,7 @@ var jqueryNoConflict = jQuery;
 jqueryNoConflict(document).ready(function(){
 
    // initializeTabletopObject('https://docs.google.com/spreadsheets/d/1PLaEKrCOx5aZwuWtr9pvtWt4KOS9OuiIB05cCnYK6tI/pubhtml');
-   initializeTabletopObject('https://docs.google.com/spreadsheets/d/1PLaEKrCOx5aZwuWtr9pvtWt4KOS9OuiIB05cCnYK6tI/pubhtml');
+   initializeTabletopObject('https://docs.google.com/spreadsheets/d/1Ax3ORAMzU38SfbKzxs35clDcGMqZhKQu8Hq9LAqOcxY/pubhtml');
 });
 
 // pull data from google spreadsheet
@@ -26,11 +26,19 @@ function createTableColumns(){
     is what happens with the More Info column header */
 
     var tableColumns =   [
-		{'mDataProp': 'speedsheet', 'sTitle': 'Speedsheet', 'sClass': 'center'},
-		{'mDataProp': 'rowtitle', 'sTitle': 'Row title', 'sClass': 'center'},
-		{'mDataProp': 'columtitle', 'sTitle': 'Column title', 'sClass': 'center'},
-		{'mDataProp': 'yoyo', 'sTitle': 'Yo yo', 'sClass': 'center'},
-		{'mDataProp': 'person', 'sTitle': 'Person', 'sClass': 'center'}
+		{'mDataProp': 'firstname', 'sTitle': 'First Name', 'sClass': 'center'},
+		{'mDataProp': 'secondname', 'sTitle': 'Second Name', 'sClass': 'center'},
+		{'mDataProp': 'topicscovered', 'sTitle': 'topics Covered', 'sClass': 'center'},
+		{'mDataProp': 'country', 'sTitle': 'Country', 'sClass': 'center'},
+		{'mDataProp': 'region', 'sTitle': 'Region', 'sClass': 'center'},
+		{'mDataProp': 'language', 'sTitle': 'Language', 'sClass': 'center'},
+		{'mDataProp': 'occupation', 'sTitle': 'Occupation', 'sClass': 'center'},
+		{'mDataProp': 'affiliations', 'sTitle': 'Affiliation(s)', 'sClass': 'center'},
+		{'mDataProp': 'email', 'sTitle': 'E-mail', 'sClass': 'center'},
+		{'mDataProp': 'website', 'sTitle': 'Website', 'sClass': 'center'},
+		{'mDataProp': 'twitter', 'sTitle': 'Twitter', 'sClass': 'center'},
+		{'mDataProp': 'exampletalk', 'sTitle': 'Example Talk', 'sClass': 'center'},
+		{'mDataProp': 'bio', 'sTitle': 'Bio', 'sClass': 'center'}
 	];
     return tableColumns;
 }
